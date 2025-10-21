@@ -9,6 +9,7 @@ let firstName = "Fart";
 console.log(firstName);
 */
 
+/* 2.11
 let jsIsFun = true;
 console.log(jsIsFun);
 
@@ -27,3 +28,20 @@ year = 1991;
 console.log(typeof year);
 
 console.log(typeof null);
+*/
+
+
+// 2.12
+let age = 30;
+age = 31; // mutate variable = let
+
+const birthYear = 1991;
+// birthYear = 1990; // error - immutable variable = const
+
+// const job; // error - can't declare empty const
+
+var job = "programmer"; // old way of defining variables, shouldn't use
+job = "teacher";
+
+// don't need to use let or const, but that creates variable on global scope
+
