@@ -1,3 +1,4 @@
+/*
 let country = "Canada";
 
 let continent = "North America";
@@ -9,3 +10,4 @@ console.log("Country = " + country);
 console.log("Continent is " + continent);
 
 console.log("Population is " + population);
+*/
