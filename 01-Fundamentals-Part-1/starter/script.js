@@ -30,7 +30,7 @@ console.log(typeof year);
 console.log(typeof null);
 */
 
-
+/* 
 // 2.12
 let age = 30;
 age = 31; // mutate variable = let
@@ -44,4 +44,37 @@ var job = "programmer"; // old way of defining variables, shouldn't use
 job = "teacher";
 
 // don't need to use let or const, but that creates variable on global scope
+ */
 
+
+// Section 2.13
+const now = 2037;
+const ageJonas = now - 1991;
+console.log(ageJonas);
+const ageSarah = now - 2018;
+console.log(ageJonas, ageSarah);
+
+console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
+// 2 ** 3 means 2 to the power of 3 = 2 * 2 * 2
+
+const firstName = "Jonas";
+const lastName = "Fart";
+console.log(firstName + " " + lastName);
+
+// Assignment operator
+let x = 10 + 5;
+x += 10;
+x *= 4;
+x++;
+x--;
+x--;
+console.log(x);
+
+// Comparison operators
+console.log(ageJonas > ageSarah); // returns boolean
+// >, <, >=, <=
+console.log(ageSarah == 19);
+
+const isFullAge = ageSarah >= 18;
+
+console.log(now - 1991 > now - 2018);
