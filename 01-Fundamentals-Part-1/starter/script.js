@@ -116,7 +116,7 @@ const markHigherBMI = BMIMark > BMIJohn;
 console.log(markHigherBMI);
 */
 
-/* 
+/*
 // Section 2.17
 // String and template literals
 
@@ -142,7 +142,7 @@ console.log(`String
     lines`);
 */
 
-/* 
+/*
 // Section 2.18
 // if/else statements
 const age = 15;
@@ -166,7 +166,7 @@ if (birthYear <= 2000) {
 console.log(century);
 */
 
-
+/*
 // Challenge #2 section 2.18
 const heightMark = 1.88;
 const massMark = 95;
@@ -188,3 +188,25 @@ if (markHigherBMI) {
     BMIMessage = `John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`;
 }
 console.log(BMIMessage);
+*/
+
+
+// Section 2.20
+// Type conversion and coercion
+
+// conversion
+const inputYear = '1991';
+console.log(Number(inputYear));
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Jonas')); // NaN (Not a Number)
+
+console.log(String(23), 23);
+
+// coercion
+console.log('I am ' + 23 + ' years old'); // Int is coerced to a String when surrounded with String
+console.log('23' - '10' - 3); // String numbers coerced into Numbers
+console.log('23' + '10' + 3); // Coerced into String
+
+let n = '1' + 1; // '11'
+n = n - 1; // 11 - 1
