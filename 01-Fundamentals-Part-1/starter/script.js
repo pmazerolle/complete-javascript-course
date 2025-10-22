@@ -239,7 +239,7 @@ if (height) {
 }
 */
 
-
+/* 
 // Section 2.22
 // Equality Operators: == vs ===
 
@@ -258,3 +258,20 @@ console.log(favNum, typeof (favNum));
 // != loose
 if (favNum !== 23) console.log("Why not 23?");
 if (Number.isNaN(favNum)) console.log("Not a number");
+*/
+
+
+// Section 2.23
+// Boolean logic
+// AND (&&), OR(||), NOT()
+
+const age = 16;
+
+const a = age >= 20;
+const b = age < 30;
+
+console.log(!a);
+console.log(a && b);
+console.log(a || b);
+console.log(!a && b);
+console.log(a || !b);
