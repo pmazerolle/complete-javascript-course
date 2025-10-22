@@ -260,7 +260,7 @@ if (favNum !== 23) console.log("Why not 23?");
 if (Number.isNaN(favNum)) console.log("Not a number");
 */
 
-
+/* 
 // Section 2.23
 // Boolean logic
 // AND (&&), OR(||), NOT()
@@ -275,3 +275,20 @@ console.log(a && b);
 console.log(a || b);
 console.log(!a && b);
 console.log(a || !b);
+*/
+
+
+// Section 2.23 Exercise
+const scoreDolphins = (96 + 108 + 89) / 3;
+const scoreKoalas = (88 + 91 + 110) / 3;
+
+console.log(`Dolphins score ${scoreDolphins}`);
+console.log(`Koalas score ${scoreKoalas}`);
+
+if (scoreDolphins > scoreKoalas) {
+    console.log("Dolphins win the trophy");
+} else if (scoreDolphins < scoreKoalas) {
+    console.log("Koalas win the trophy");
+} else {
+    console.log("Both win the trophy");
+}
