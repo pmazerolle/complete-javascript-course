@@ -30,7 +30,7 @@ console.log(typeof year);
 console.log(typeof null);
 */
 
-/* 
+/*
 // 2.12
 let age = 30;
 age = 31; // mutate variable = let
@@ -46,7 +46,7 @@ job = "teacher";
 // don't need to use let or const, but that creates variable on global scope
  */
 
-/* 
+/*
 // Section 2.13
 const now = 2037;
 const ageJonas = now - 1991;
@@ -80,7 +80,7 @@ const isFullAge = ageSarah >= 18;
 console.log(now - 1991 > now - 2018);
 */
 
-/* 
+/*
 // Section 2.14
 // Operator precedence
 const now = 2037
@@ -100,6 +100,7 @@ const averageAge = (ageJonas + ageSarah) / 2;
 console.log(averageAge);
 */
 
+/*
 // Section 2.14 Assignment
 const heightMark = 1.88;
 const massMark = 95;
@@ -113,3 +114,29 @@ console.log(BMIJohn);
 
 const markHigherBMI = BMIMark > BMIJohn;
 console.log(markHigherBMI);
+*/
+
+
+// Section 2.17
+// String and template literals
+
+const firstName = "Phil";
+const job = "dev";
+const birthYear = 1988;
+const year = 2037;
+
+const phil = "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + "!";
+console.log(phil);
+
+// Template literals
+const philNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}`
+console.log(philNew);
+
+// Multi-line String
+console.log('String with \n\
+    multiple \n\
+    lines');
+
+console.log(`String
+    multiple
+    lines`);
