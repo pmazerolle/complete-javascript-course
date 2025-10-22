@@ -116,7 +116,7 @@ const markHigherBMI = BMIMark > BMIJohn;
 console.log(markHigherBMI);
 */
 
-
+/* 
 // Section 2.17
 // String and template literals
 
@@ -140,3 +140,51 @@ console.log('String with \n\
 console.log(`String
     multiple
     lines`);
+*/
+
+/* 
+// Section 2.18
+// if/else statements
+const age = 15;
+
+if (age >= 18) {
+    console.log("Sarah can start driving license");
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Sarah is too young. Wait another ${yearsLeft} years.`)
+}
+
+const birthYear = 1988;
+let century;
+
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+
+console.log(century);
+*/
+
+
+// Challenge #2 section 2.18
+const heightMark = 1.88;
+const massMark = 95;
+const heightJohn = 1.76;
+const massJohn = 85;
+
+const BMIMark = massMark / (heightMark * heightMark);
+console.log(BMIMark);
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+console.log(BMIJohn);
+
+const markHigherBMI = BMIMark > BMIJohn;
+
+let BMIMessage;
+
+if (markHigherBMI) {
+    BMIMessage = `Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`;
+} else {
+    BMIMessage = `John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`;
+}
+console.log(BMIMessage);
