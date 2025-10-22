@@ -46,7 +46,7 @@ job = "teacher";
 // don't need to use let or const, but that creates variable on global scope
  */
 
-
+/* 
 // Section 2.13
 const now = 2037;
 const ageJonas = now - 1991;
@@ -78,3 +78,38 @@ console.log(ageSarah == 19);
 const isFullAge = ageSarah >= 18;
 
 console.log(now - 1991 > now - 2018);
+*/
+
+/* 
+// Section 2.14
+// Operator precedence
+const now = 2037
+const ageJonas = now - 1992;
+const ageSarah = now - 2018;
+
+console.log(now - 1991 > now - 2018);
+// mdn = mozilla developer network
+
+// right to left precedence
+let x, y;
+x = y = 25 - 10 - 5;
+
+console.log(x, y);
+
+const averageAge = (ageJonas + ageSarah) / 2;
+console.log(averageAge);
+*/
+
+// Section 2.14 Assignment
+const heightMark = 1.88;
+const massMark = 95;
+const heightJohn = 1.76;
+const massJohn = 85;
+
+const BMIMark = massMark / (heightMark * heightMark);
+console.log(BMIMark);
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+console.log(BMIJohn);
+
+const markHigherBMI = BMIMark > BMIJohn;
+console.log(markHigherBMI);
