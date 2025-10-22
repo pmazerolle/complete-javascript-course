@@ -212,7 +212,7 @@ let n = '1' + 1; // '11'
 n = n - 1; // 11 - 1
 */
 
-
+/* 
 // Section 2.21
 // Truthy and Falsy Values
 
@@ -237,3 +237,24 @@ if (height) {
 } else {
     console.log("Height is UNDEFINED");
 }
+*/
+
+
+// Section 2.22
+// Equality Operators: == vs ===
+
+const age = 18;
+if (age === 18) console.log("adult");
+// === straight equals - no type coercion
+// == loose equals - allows coercion
+
+console.log('18' === 18);
+console.log('18' == 18);
+
+const favNum = Number(prompt("What's your favourite number?"));
+console.log(favNum, typeof (favNum));
+
+// !== strict
+// != loose
+if (favNum !== 23) console.log("Why not 23?");
+if (Number.isNaN(favNum)) console.log("Not a number");
