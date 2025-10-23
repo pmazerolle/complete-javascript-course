@@ -138,7 +138,7 @@ function checkWinner(avgDolphins, avgKoalas) {
 checkWinner(scoreDolphins, scoreKoalas);
 */
 
-
+/*
 // Section 3.40 - Arrays
 const friends = ['Michael', 'Steven', 'Peter']; // literal syntax
 console.log(friends);
@@ -162,4 +162,54 @@ const years = [1990, 1957, 2002];
 for (let i = 0; i < years.length; i++) {
     console.log(calcAge(years[i]));
 }
+*/
 
+/*
+// Section 2.41 - Basic array operations (methods)
+
+const friends = ['Michael', 'Steven', 'Peter'];
+friends.push('Jay'); // Method - Add value to array
+const newLength = friends.push('Jay');
+
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('John'); // Adds to start
+
+const popped = friends.pop(); // Remove Last element
+console.log(popped);
+
+const shift = friends.shift();
+console.log(shift);
+console.log(friends);
+
+console.log(friends.indexOf('Steven'));
+
+console.log(friends.includes('John')); // Boolean
+*/
+
+/*
+// Section 3.41 Exercise
+
+function calcTip(bill) {
+    const tip = bill * (bill >= 50 && bill <= 300 ? 0.15 : 0.2);
+
+    return tip;
+}
+
+console.log(calcTip(100));
+
+const bills = [125, 555, 44];
+
+const tips = [];
+const totals = [];
+for (let i = 0; i < bills.length; i++) {
+    tips.push(calcTip(bills[i]));
+    totals.push(bills[i] + tips[i]);
+}
+console.log(tips);
+console.log(totals);
+*/
+
+
+// Section 3.43 - Objects
