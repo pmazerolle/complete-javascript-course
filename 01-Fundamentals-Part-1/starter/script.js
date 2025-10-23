@@ -324,7 +324,7 @@ switch (day) {
 }
  */
 
-
+/* 
 // Section 2.27
 // Statements and Expressions
 3 + 4 // expression -> Produces a value
@@ -337,3 +337,17 @@ if (23 > 10) {
 
 // Can put expression but not statement
 console.log(`I'm ${2047 - 1991} years old`);
+ */
+
+
+// Section 2.28
+// Ternary Operator
+const age = 3;
+age >= 18 ? console.log("I like to drink beer") : console.log("I can't drink");
+
+const drink = age >= 18 ? "wine" : "beer";
+console.log(drink);
+
+console.log(`I like to drink ${age >= 18 ? "wine" : "water"}`);
+
+
