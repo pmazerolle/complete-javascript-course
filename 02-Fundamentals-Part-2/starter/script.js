@@ -213,3 +213,35 @@ console.log(totals);
 
 
 // Section 3.43 - Objects
+
+// Object literal syntax
+const jonas = {
+    firstName: "Jonas",
+    lastName: "Fart",
+    age: 2037 - 1991,
+    job: "dork",
+    friends: ['Michael', 'Peter', 'Steven']
+};
+
+
+// Section 3.44 - Dot vs. Bracket Notation
+console.log(jonas.lastName);
+console.log(jonas['lastName']); // Bracket can be used for any expression
+
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+
+const interest = prompt("What do you want to know about Jonas?");
+
+// console.log(jonas[interest]);
+
+jonas.location = 'Portugal';
+
+if (jonas[interest]) {
+    console.log(jonas[interest]);
+} else {
+    console.log("Wrong request");
+}
+
+console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
