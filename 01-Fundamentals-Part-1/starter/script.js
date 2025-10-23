@@ -295,7 +295,7 @@ if (scoreDolphins > scoreKoalas) {
 }
 */
 
-
+/* 
 // Section 2.26
 // The Switch statement
 
@@ -322,3 +322,18 @@ switch (day) {
     default:
         console.log("Not a valid day");
 }
+ */
+
+
+// Section 2.27
+// Statements and Expressions
+3 + 4 // expression -> Produces a value
+true && false && !false // expression
+
+// Statement -> Does not produce a value
+if (23 > 10) {
+    const str = "23 is bigger";
+}
+
+// Can put expression but not statement
+console.log(`I'm ${2047 - 1991} years old`);
