@@ -9,7 +9,8 @@ let firstName = "Fart";
 console.log(firstName);
 */
 
-/* 2.11
+/*
+2.11
 let jsIsFun = true;
 console.log(jsIsFun);
 
@@ -190,7 +191,7 @@ if (markHigherBMI) {
 console.log(BMIMessage);
 */
 
-/* 
+/*
 // Section 2.20
 // Type conversion and coercion
 
@@ -212,7 +213,7 @@ let n = '1' + 1; // '11'
 n = n - 1; // 11 - 1
 */
 
-/* 
+/*
 // Section 2.21
 // Truthy and Falsy Values
 
@@ -239,7 +240,7 @@ if (height) {
 }
 */
 
-/* 
+/*
 // Section 2.22
 // Equality Operators: == vs ===
 
@@ -260,7 +261,7 @@ if (favNum !== 23) console.log("Why not 23?");
 if (Number.isNaN(favNum)) console.log("Not a number");
 */
 
-/* 
+/*
 // Section 2.23
 // Boolean logic
 // AND (&&), OR(||), NOT()
@@ -277,7 +278,7 @@ console.log(!a && b);
 console.log(a || !b);
 */
 
-
+/*
 // Section 2.23 Exercise
 const scoreDolphins = (96 + 108 + 89) / 3;
 const scoreKoalas = (88 + 91 + 110) / 3;
@@ -291,4 +292,33 @@ if (scoreDolphins > scoreKoalas) {
     console.log("Koalas win the trophy");
 } else {
     console.log("Both win the trophy");
+}
+*/
+
+
+// Section 2.26
+// The Switch statement
+
+const day = "fridfay";
+
+switch (day) {
+    case "monday": // day === "monday"
+        console.log("Plan stuff");
+        break;
+    case "tuesday":
+        console.log("it's tuesday");
+        break;
+    case "wednesday":
+    case "thursday":
+        console.log("wed + thu");
+        break;
+    case "friday":
+        console.log("drink");
+        break;
+    case "saturday":
+    case "sunday":
+        console.log("enjoy weekend");
+        break;
+    default:
+        console.log("Not a valid day");
 }
