@@ -90,7 +90,7 @@ function fruitProcessor(apples, oranges) {
 console.log(fruitProcessor(2, 3));
 */
 
-
+/*
 // Section 3.38 - Reviewing functions
 
 const calcAge = function (birthYear) {
@@ -110,3 +110,56 @@ const yearsToRetirement = function (birthYear, firstName) {
 }
 
 console.log(yearsToRetirement(1932, "Butt"));
+*/
+
+/*
+// Exercise 5 Challenge #1
+
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+
+const scoreDolphins = calcAverage(85, 54, 41);
+const scoreKoalas = calcAverage(23, 34, 27);
+
+function checkWinner(avgDolphins, avgKoalas) {
+    let winner;
+    if (avgDolphins >= avgKoalas * 2) {
+        winner = "Dolphins";
+    } else if (avgKoalas >= avgDolphins * 2) {
+        winner = "Koalas";
+    } else {
+        winner = "none";
+    }
+
+    console.log(winner !== "none" ? `${winner} win (${avgDolphins} vs. ${avgKoalas})` : "No team wins...");
+    return winner;
+
+}
+
+checkWinner(scoreDolphins, scoreKoalas);
+*/
+
+
+// Section 3.40 - Arrays
+const friends = ['Michael', 'Steven', 'Peter']; // literal syntax
+console.log(friends);
+
+// const years = new Array(1991, 1992, 1993);
+
+console.log(friends[0]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'Jay'; // mutate
+
+const jonas = ['Jonas', 'Fart', 2037 - 1991, friends];
+console.log(jonas);
+
+const calcAge = birthYear => 2037 - birthYear;
+
+const years = [1990, 1957, 2002];
+
+for (let i = 0; i < years.length; i++) {
+    console.log(calcAge(years[i]));
+}
+
