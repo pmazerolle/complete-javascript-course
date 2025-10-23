@@ -351,7 +351,7 @@ console.log(drink);
 console.log(`I like to drink ${age >= 18 ? "wine" : "water"}`);
  */
 
-
+/* 
 // Section 2.29 - Challenge #4
 
 const bill = 275;
@@ -362,5 +362,5 @@ let total = bill + tip;
 
 
 console.log(`The bill was ${bill}, the tip was ${tip}, and the total value was ${total}`);
-
+ */
 
