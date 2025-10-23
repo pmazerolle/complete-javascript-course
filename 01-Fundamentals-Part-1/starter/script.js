@@ -295,7 +295,7 @@ if (scoreDolphins > scoreKoalas) {
 }
 */
 
-/* 
+/*
 // Section 2.26
 // The Switch statement
 
@@ -324,7 +324,7 @@ switch (day) {
 }
  */
 
-/* 
+/*
 // Section 2.27
 // Statements and Expressions
 3 + 4 // expression -> Produces a value
@@ -339,7 +339,7 @@ if (23 > 10) {
 console.log(`I'm ${2047 - 1991} years old`);
  */
 
-
+/*
 // Section 2.28
 // Ternary Operator
 const age = 3;
@@ -349,5 +349,18 @@ const drink = age >= 18 ? "wine" : "beer";
 console.log(drink);
 
 console.log(`I like to drink ${age >= 18 ? "wine" : "water"}`);
+ */
+
+
+// Section 2.29 - Challenge #4
+
+const bill = 275;
+
+let tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+let total = bill + tip;
+
+
+
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value was ${total}`);
 
 
