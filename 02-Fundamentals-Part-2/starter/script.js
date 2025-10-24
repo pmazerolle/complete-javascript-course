@@ -211,7 +211,7 @@ console.log(tips);
 console.log(totals);
 */
 
-
+/*
 // Section 3.43 - Objects
 
 // Object literal syntax
@@ -245,3 +245,59 @@ if (jonas[interest]) {
 }
 
 console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
+*/
+
+/* 
+// Section 3.45 - Object Methods
+
+const jonas = {
+    firstName: "Jonas",
+    lastName: "Fart",
+    birthYear: 1991,
+    job: "dork",
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense: true,
+
+    calcAge: function () {
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function () {
+        this.summary = `${this.firstName} is a ${this.calcAge()}-year old ${this.job} and he has ${this.hasDriversLicense ? "a" : "no"} driver's license`;
+        return this.summary;
+    }
+};
+
+console.log(jonas.calcAge());
+console.log(jonas['calcAge'](1991));
+
+console.log(jonas.getSummary());
+ */
+
+
+// Section 3.34 CHALLENGE #3
+const mark = {
+    fullName: "Mark",
+    mass: "78",
+    height: "1.69",
+
+    calcBMI: function () {
+        this.bmi = this.mass / (this.height * this.height);
+        return this.bmi;
+    }
+};
+
+const john = {
+    fullName: "John",
+    mass: "92",
+    height: "1.95",
+
+    calcBMI: function () {
+        this.bmi = this.mass / (this.height * this.height);
+        return this.bmi;
+    }
+};
+
+
+console.log(`${john.fullName}'s BMI (${john.calcBMI()}) is ${john.calcBMI() > mark.calcBMI() ? "higher" : "lower"} than ${mark.fullName}'s (${mark.calcBMI()}!)`);
