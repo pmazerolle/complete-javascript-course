@@ -247,7 +247,7 @@ if (jonas[interest]) {
 console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
 */
 
-/* 
+/*
 // Section 3.45 - Object Methods
 
 const jonas = {
@@ -275,7 +275,7 @@ console.log(jonas['calcAge'](1991));
 console.log(jonas.getSummary());
  */
 
-
+/*
 // Section 3.34 CHALLENGE #3
 const mark = {
     fullName: "Mark",
@@ -301,3 +301,54 @@ const john = {
 
 
 console.log(`${john.fullName}'s BMI (${john.calcBMI()}) is ${john.calcBMI() > mark.calcBMI() ? "higher" : "lower"} than ${mark.fullName}'s (${mark.calcBMI()}!)`);
+*/
+
+/* 
+// Section 3.47 - Iteration: For Loop
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetition ${rep}`);
+}
+*/
+
+// Section 3.48 - Looping arrays, breaking and continuing
+const jonasArray = [
+    'Jonas',
+    'Fart',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven'],
+    true
+];
+
+const types = [];
+
+for (let i = 0; i < jonasArray.length; i++) {
+    console.log(jonasArray[i]);
+
+    // types[i] = (typeof jonasArray[i]);
+    types.push(typeof jonasArray[i]);
+}
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let j = 0; j < years.length; j++) {
+    ages.push(2037 - years[j]);
+}
+console.log(ages);
+
+// continue and break
+console.log('--- ONLY STRINGS ---');
+for (let i = 0; i < jonasArray.length; i++) {
+    if (typeof jonasArray[i] !== 'string') continue;
+
+    types.push(typeof jonasArray[i]);
+}
+console.log(types);
+
+console.log('--- BREAK WITH NUMBER ---');
+for (let i = 0; i < jonasArray.length; i++) {
+    if (typeof jonasArray[i] === 'number') break;
+    console.log(jonasArray[i]);
+}
