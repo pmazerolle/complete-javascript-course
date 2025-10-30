@@ -354,7 +354,7 @@ for (let i = 0; i < jonasArray.length; i++) {
 }
 */
 
-
+/* 
 // Section 3.49 - Looping backwards
 
 const jonasArray = [
@@ -376,3 +376,58 @@ for (let exercise = 1; exercise < 4; exercise++) {
         console.log(`Exercise ${exercise}: Rep ${rep}`);
     }
 }
+*/
+
+/* 
+// Section 3.50 - While loop
+
+let rep = 1;
+while (rep <= 10) {
+    console.log(`Rep ${rep}`);
+    rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log(`Loop is about to end...`);
+}
+*/
+
+
+// Challenge #4
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+for (let i = 0; i < bills.length; i++) {
+    tips.push(calcTip(bills[i]));
+    totals.push(bills[i] + tips[i]);
+}
+
+console.log(tips);
+console.log(totals);
+
+
+// Optional challenge
+
+const calcAverage = function (arr) {
+    let sum = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+
+    return sum / arr.length;
+}
+
+console.log(calcAverage(totals));
+console.log(calcAverage([2, 3, 7]));
