@@ -89,6 +89,7 @@ const amplitude2 = newCalcTempAmplitude([3, 7, 4, "error", 17, -6], [32, -20]);
 console.log(amplitude2);
 */
 
+/* 
 // Section 5.63 - Debugging
 
 const measureKelvin = function () {
@@ -139,3 +140,26 @@ const newCalcTempAmplitude = function (temps1, temps2) {
 
 const amplitude2 = newCalcTempAmplitude([3, 5, 1], [9, 4, 5]);
 console.log(amplitude2);
+*/
+
+/* 
+// Challenge #1
+
+const testData1 = [17, 21, 23];
+const testData2 = [12, 5, -5, 0, 4];
+
+function printForecast(arr) {
+    // const printForecast = function (arr) {
+    let forecastStr = "...";
+    for (let i = 0; i < arr.length; i++) {
+        forecastStr += ` ${arr[i]}C in ${i + 1} days ...`;
+    }
+
+    return forecastStr;
+}
+
+console.log(printForecast(testData1));
+console.log(printForecast(testData2));
+*/
+
+// Section 6.68 - Basic HTML Structure and Elements
